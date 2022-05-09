@@ -1,0 +1,35 @@
+
+<link rel = "stylesheet" type=" text/css" href="{{url_for('static', filename='style.css') }}">
+<style>
+    div.board{
+    width : {{ 103*width }};
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    }
+</style>
+    
+    <h1>Checker Board</h1>
+    <div class = "board">
+        {% for j in range(0, height): %}
+            {% if j%2: %}
+                {% for i in range(0, width) %}
+                    {% if i % 2: %}
+                    <div class="box red"></div>
+                    {% else %}
+                    <div class="box black"></div>
+                    {% endif %}
+                {% endfor %}
+            {% else : %}
+                {% for i in range(0, width) %}
+                    {% if i % 2: %}
+                    <div class="box black"></div>
+                    {% else %}
+                    <div class="box red"></div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
+        </div>  
+</body>
+</html>
