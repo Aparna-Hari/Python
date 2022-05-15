@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user</title>
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” 
+    integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+</head>
+<body>
+    <h1> Add a New User </h1>
+    <div>
+        <form class = "col-3" action="/new_user" method="POST">
+            <label for="firstname"> First Name :</label>
+            <input  type="text" class="input-group form-control" name="first_name">
+            <label for="lastname"> Last Name :</label>
+            <input  type="text" class="input-group form-control" name="last_name">
+            <label for="email"> Email :</label>
+            <input  type="email" class="input-group form-control" name="email">
+            <button type="submit" class="input-group form-control" >Add User</button>
+        </form>
+    </div>
+    <div>
+        <a href="/users" >Home</a>
+    </div>
+
+</body>
+</html>
